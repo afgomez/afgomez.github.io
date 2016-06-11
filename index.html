@@ -3,21 +3,85 @@ layout: default
 ---
 
 <div class="home">
+  <h2>Hi!</h2>
+  <p>My name is Alejandro Fernández. I'm a full-stack developer based in Amsterdam. <a href="mailto:{{ site.email }}">Let's talk.</a></p>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
+  <h2>Skills <small>(In no particular order)</small></h2>
+  <ul class="skills">
+    <li>Semantic HTML5 / CSS3</li>
+    <li>Responsive CSS</li>
+    <li>SASS/SCSS</li>
+    <li>Javascript</li>
+    <li>ES2015</li>
+    <li>jQuery</li>
+    <li>EmberJS</li>
+    <li>Legacy browsers &amp; Legacy code</li>
+    <li>Basic SEO optimization</li>
+    <li>Ruby on Rails</li>
+    <li>Git</li>
+    <li>Basic Bash programming</li>
+    <li>Basic Perl programming</li>
+    <li>Mac OS</li>
+    <li>Photoshop</li>
+    <li>Fireworks</li>
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <h2>Timeline</h2>
+
+  <!-- <div class="legend"> -->
+  <!--   <label class="life"><input type="checkbox" checked name="life"/> Life</label> -->
+  <!--   <label class="work"><input type="checkbox" checked name="work"/> Work</label> -->
+  <!--   <label class="skill"><input type="checkbox" checked name="skill"/> Skills</label> -->
+  <!--   <label class="education"><input type="checkbox" checked name="education"/> Education</label> -->
+  <!--   <label class="hobby"><input type="checkbox" checked name="hobby"/> Hobbies</label> -->
+  <!-- </div> -->
+
+  <div class="timeline">
+
+    {% for event in site.data.timeline %}
+      <div class="timeline-event" data-type="{{ event.type }}">
+        <span class="timeline-date">{{ event.date }}</span>
+        <div class="timeline-body">
+          <h3>{{ event.title }}</h3>
+          {{ event.body }}
+          {% if event.skills %}
+            <ul class="skills no-stretch">
+              {% for skill in event.skills %}
+                <li>{{ skill }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <script type="text/javascript">
+
+    (function() {
+      var timeline = document.querySelector(".timeline");
+      var legend = document.querySelector(".legend");
+      legend.addEventListener('click', function(ev) {
+        var target = ev.target;
+        if (target.nodeName != "INPUT") {
+          return;
+        }
+
+        var filter = target.getAttribute("name");
+        var checked = target.checked;
+        var applied_filters = timeline.dataset.filters || "";
+
+
+        if (checked) {
+          applied_filters = applied_filters.replace( RegExp("\\s" + filter), "");
+        } else {
+          applied_filters += " " + filter;
+        }
+        timeline.dataset.filters = applied_filters;
+      });
+
+
+    })();
+  </script>
 
 </div>

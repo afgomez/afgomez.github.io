@@ -1,0 +1,196 @@
+- date: June 2016
+  type: skill
+  title: Started to learn Elixir
+
+- date: May 2016
+  type: work
+  title: Released messaging platform
+  body: >
+    Developed the interface for the messenger application to help customers and
+    properties to communicate with each other.
+  skills:
+    - SCSS
+    - Responsive CSS
+    - Redux pattern
+
+- date: August 2015
+  type: work
+  title: Back to programming full time.
+  body: >
+    <p>After three quarters as a Team Lead and many meetings I moved back to a
+    full time developer position in the Post Booking team. There I developed
+    tools for helping the customer after they have booked.</p>
+
+- date: Oct. 2014
+  type: work
+  title: "Team Lead Promotion"
+  body: >
+    <p>I was moved to the Group Search team, responsible of optimising the
+    website for stays of more than two people. I managed a team of 5 people
+    while I helped with the development tasks.</p>
+  skills:
+    - Management
+    - Agile facilitator
+
+- date: June 2014
+  type: work
+  title: Became part of the interviewing team
+  body: >
+    <p>Participate in the hiring process for new javascript developers: going
+      to recruiting events and conducting interviews.</p>
+  skills:
+    - Interviewing
+
+- date: Jan. 2014
+  type: work
+  title: Started working at Booking.com
+  body: >
+    <p>My first role was as a Javascript developer in the Locali{s,z}ation
+    team. I was responsible of maintaining and improving the existing L10n APIs
+    for time, distance, currency, etc. I also ran experiments for local
+    markets.</p>
+
+  skills:
+    - Perl
+    - jQuery
+    - HTML::Template
+    - API Design
+
+- date: Jan. 2014
+  type: life
+  title: Moved to Amsterdam, The Netherlands.
+  body: >
+    <a data-flickr-embed="true" href="https=//www.flickr.com/photos/antarticonorte/12726054003/in/dateposted/" title="Herengracht">
+      <img class="timeline-thumb" src="https://c4.staticflickr.com/8/7341/12726054003_891d6e764e.jpg" alt="Herengracht">
+    </a>
+
+- date: July 2013
+  type: work
+  title: Released <a href="https://www.directseguros.es/calcular/seguros-de-coche/funnel/">Direct Seguros</a> funnel
+  body: >
+    <p>Javascript application to control the flow and the logic of the hiring funnel of a car insurance company. We had to integrate against their webservices to gather all the values for the funnel and to save the insurance offer.</p>
+    <p>The frontend is a SPA that communicates with a JSON API written with Rails. The flow of the multistep form is regulated with an adhoc state machine implemented in Javascript.</p>
+  skills:
+    - Capybara
+    - Acceptance testing
+    - Phantom JS
+    - Rails
+
+- date: Jan. 2013
+  type: life
+  title: Moved back to Madrid, Spain.
+  body: >
+    <p>Relocated to the Madrid office of <a href="https://the-cocktail.com/en">The cocktail</a></p>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/antarticonorte/27528844401/in/dateposted/" title="Madrid">
+      <img class="timeline-thumb" src="https://c2.staticflickr.com/8/7401/27528844401_6908716b62.jpg" alt="Madrid">
+    </a>
+
+- date: Aug. 2012
+  type: work
+  title: Released Talishoes.com
+  body: >
+    <p>Released an ecommerce for luxury shoes. The catalog was a backbone
+    application that loaded all the products against an REST API.</p>
+    <p>Unfortunately the website is no longer online</p>
+  skills:
+    - Backbone
+    - Rails
+    - REST
+    - JSON
+
+- date: July 2010
+  type: work
+  title: Released <a href="http://ggili.com/">Gustavo Gili</a> website
+  body: >
+    <p>Ecommerce for a spanish publiser specialiced in architecture, design, photography and other arts.</p>
+  skills:
+    - Rails
+    - ERb
+    - Fireworks
+
+- date: Mar. 2010
+  type: life
+  title: Moved to Oviedo, Spain.
+  body: >
+    <a data-flickr-embed="true"  href="https://www.flickr.com/photos/antarticonorte/4490214115/in/dateposted/" title="Oviedo">
+      <img class="timeline-thumb" src="https://c4.staticflickr.com/5/4054/4490214115_441894c7ee.jpg" alt="Oviedo">
+    </a>
+
+- date: Sept. 2008
+  type: work
+  title: Started working as a Lead Frontend Developer at Diximedia
+  body: >
+    <p>Part of the team from Prisacom started a company with their own newspaper:
+    <a href="http://lainformacion.com">lainformacion.com</a>. They offered me
+    the chance to build the frontend from scratch.</p>
+  skills:
+    - jQuery plugins
+    - Management
+    - Subversion
+    - Semantic HTML
+
+- date: July 2008
+  type: work
+  title: Launched new redesing of Cadenaser.com
+
+
+- date: Apr. 2007
+  type: work
+  title: First work as a Junior Frontend Developer at Prisacom
+  body: >
+    <p>Mantaining high-traffic sites for the most important editorial group
+        of Spain (<a href="http://elpais.com" rel="external">elpais.com</a>, <a
+        href="http://as.com" rel="external">as.com</a>, <a
+        href="http://cadenaser.com" rel="external">cadenaser.com</a>, <a
+        href="http://cuatro.com" rel="external">cuatro.com</a>, etc.).</p>
+  skills:
+    - Accessiblity
+    - Semantic HTML
+
+- date: Apr. 2007
+  type: life
+  title: Moved to Madrid, Spain.
+  body: >
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/antarticonorte/2519234691/in/dateposted/" title="Gran vía">
+      <img class="timeline-thumb" src="https://c4.staticflickr.com/3/2327/2519234691_befcfd875c.jpg" alt="Gran vía">
+    </a>
+
+- date: June 2005
+  type: education
+  title: Finished CFGS Administración de Sistemas Informáticos
+
+- date: Sept. 2003
+  type: education
+  title: Begin CFGS Administracion de Sistemas Informaticos
+  body: >
+    <p>Started a two year degree in system's administration in “Centro María auxiliadora”</p>
+  skills:
+    - Networks
+    - C programming
+    - Operating systems
+    - Linux
+
+- date: June 1999
+  type: skill
+  title: First mIRC script
+  body: >
+    <p>Internet started to seriously have presence in Spain, and the IRC
+    networks were used by many. I learned to program doing a script for
+    mIRC. Sadly that code is lost forever.</p>
+    <img class="timeline-thumb" src="/images/mirc.gif" />
+
+- date: Sept. 1989
+  type: skill
+  title: Very basic MS-DOS commands
+  body: |
+    <pre>
+    C:\> a:
+    A:\> cd games
+    A:\games\> cd tetris
+    A:\games\tetris> tetris
+    </pre>
+
+- date: Jul. 1984
+  type: life
+  title: Hello world!
+
