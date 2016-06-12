@@ -234,5 +234,25 @@ $timeline_backgrounds: (
   }
 }
 
+.site-footer {
+  background: #151515;
+  color: #fff;
+  padding: $spacing-unit 0;
+}
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
-
+  .icon {
+    width: 14px;
+    height: 14px;
+  }
+  a {
+    color:#fff;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
