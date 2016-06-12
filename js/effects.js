@@ -6,25 +6,22 @@
   function animateTimelineElements() {
     var children = timeline.querySelectorAll(children_selector);
 
-    // This piles up all the repaints
-    Array.prototype.map.call(children, function (el) {
-      return {
-        el: el,
-        rect: el.getBoundingClientRect()
-      };
-    }).forEach(function(child) {
-      if (isVisible(child.el, child.rect)) {
-        child.el.classList.add('animated');
+    for (var i = 0; i < children.length; i++) {
+      var el = children[i];
+      if (isVisible(el)) {
+        el.classList.add('animated');
+      } else {
+        // Don't bother in checking the rest if the current one is not visible.
+        break;
       }
-    });
+    }
   }
 
-  function isVisible(el, rect, threshold) {
-    rect = rect || el.getBoundingClientRect();
+  function isVisible(el, threshold) {
+    var rect = el.getBoundingClientRect();
     threshold = threshold || 0;
     return rect.top - window.innerHeight < threshold && rect.left - window.innerWidth < threshold;
   }
-
 
   // https://developer.mozilla.org/en-US/docs/Web/Events/scroll#Scroll_optimization_with_window.requestAnimationFrame
   var ticking = false;
@@ -42,7 +39,6 @@
     ticking = true;
 
   });
-
 
   // First load
   animateTimelineElements();
