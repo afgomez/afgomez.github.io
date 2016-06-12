@@ -161,10 +161,6 @@ $timeline_backgrounds: (
   // Bound margins to the box
   padding-bottom: 1px;
 
-  max-height: 800px;
-  transition: .3s ease;
-  transition-property: opacity, max-height, margin-top, margin-bottom, padding-top, padding-bottom;
-
   position: relative;
   // display: flex;
   flex-wrap: wrap;
@@ -236,49 +232,7 @@ $timeline_backgrounds: (
   .timeline-event[data-type=#{$type}] {
     @include timeline-type( map-get($timeline_colors, $type), map-get($timeline_backgrounds, $type) );
   }
-
-  .timeline[data-filters~=#{$type}] .timeline-event[data-type=#{$type}] {
-    max-height: 0;
-    opacity: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
 }
-
-.legend {
-  display: flex;
-  flex-wrap: wrap;
-
-  position: sticky;
-  top: 0;
-
-  margin-left: 23px;
-
-  padding: 10px 0 15px;
-  background: $background-color;
-  z-index: 2;
-
-
-  label {
-    flex-grow: 1;
-    margin: 6px;
-    padding: 10px;
-    border-radius: 2px;
-    cursor: pointer;
-    font-size: $small-font-size;
-  }
-
-  @each $type in $timeline_types {
-    .#{$type} {
-      background: map-get($timeline_backgrounds, $type);
-      color: map-get($timeline_colors, $type);
-      border: 1px solid map-get($timeline_colors, $type);
-    }
-  }
-}
-
 
 
 

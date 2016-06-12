@@ -29,14 +29,6 @@ layout: default
 
   <h2>Timeline</h2>
 
-  <!-- <div class="legend"> -->
-  <!--   <label class="life"><input type="checkbox" checked name="life"/> Life</label> -->
-  <!--   <label class="work"><input type="checkbox" checked name="work"/> Work</label> -->
-  <!--   <label class="skill"><input type="checkbox" checked name="skill"/> Skills</label> -->
-  <!--   <label class="education"><input type="checkbox" checked name="education"/> Education</label> -->
-  <!--   <label class="hobby"><input type="checkbox" checked name="hobby"/> Hobbies</label> -->
-  <!-- </div> -->
-
   <div class="timeline">
 
     {% for event in site.data.timeline %}
@@ -57,31 +49,5 @@ layout: default
     {% endfor %}
   </div>
 
-  <script type="text/javascript">
-    /*
-    (function() {
-      var timeline = document.querySelector(".timeline");
-      var legend = document.querySelector(".legend");
-      legend.addEventListener('click', function(ev) {
-        var target = ev.target;
-        if (target.nodeName != "INPUT") {
-          return;
-        }
-
-        var filter = target.getAttribute("name");
-        var checked = target.checked;
-        var applied_filters = timeline.dataset.filters || "";
-
-
-        if (checked) {
-          applied_filters = applied_filters.replace( RegExp("\\s" + filter), "");
-        } else {
-          applied_filters += " " + filter;
-        }
-        timeline.dataset.filters = applied_filters;
-      });
-    })();
-    */
-  </script>
 
 </div>
