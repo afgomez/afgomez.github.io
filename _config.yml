@@ -13,5 +13,7 @@ url: "http://afgomez.es" # the base hostname & protocol for your site
 twitter_username: antarticonorte
 github_username:  afgomez
 
+google_analytics_tracking_id: UA-10723767-2
+
 # Build settings
 markdown: kramdown
