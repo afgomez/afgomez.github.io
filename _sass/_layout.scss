@@ -3,14 +3,35 @@ $avatar-size: 75px;
 $timeline_types: work life skill education hobby;
 $timeline_colors: ( work:#009FE2, life: #DB6E6E, skill: #82B18B, education: #c633c6, hobby: #efa950 );
 $timeline_backgrounds: (
-  work: lighten(map-get($timeline_colors, work), 53%),
-  life: lighten(map-get($timeline_colors, life), 33%),
-  skill: lighten(map-get($timeline_colors, skill), 37%),
-  education: lighten(map-get($timeline_colors, education), 47%),
-  hobby: lighten(map-get($timeline_colors, hobby), 34%)
+  work: lighten(map-get($timeline_colors, work), 52%),
+  life: lighten(map-get($timeline_colors, life), 32%),
+  skill: lighten(map-get($timeline_colors, skill), 36%),
+  education: lighten(map-get($timeline_colors, education), 46%),
+  hobby: lighten(map-get($timeline_colors, hobby), 33%)
 );
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appearin {
+  from {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .site-header {
+  animation: fadein 1s ease forwards;
   background: url('/images/header-small.jpg') no-repeat center 90%;
   background-size: cover;
   position: relative;
@@ -31,6 +52,9 @@ $timeline_backgrounds: (
   }
 
   .avatar {
+
+    animation: appearin 0.5s 0.3s ease both;
+
     background: #fff;
     position: absolute;
     bottom: -$avatar-size / 2;
@@ -124,6 +148,12 @@ $timeline_backgrounds: (
 }
 
 .timeline-event {
+
+  &.animated {
+    animation: appearin 0.5s 0.2s ease both;
+  }
+
+
   margin-left: $spacing-unit;
   padding: 10px $spacing-unit / 2;
   background: $grey-color-light;
@@ -131,7 +161,7 @@ $timeline_backgrounds: (
   // Bound margins to the box
   padding-bottom: 1px;
 
-  max-height: 500px;
+  max-height: 800px;
   transition: .3s ease;
   transition-property: opacity, max-height, margin-top, margin-bottom, padding-top, padding-bottom;
 

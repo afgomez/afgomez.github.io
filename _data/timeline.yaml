@@ -13,6 +13,15 @@
     - Responsive CSS
     - Redux pattern
 
+- date: Feb. 2016
+  type: skill
+  title: Hackathon project with EmberJS and Electron.
+  body: >
+    <p>I built a small desktop application using web technologies for the recruiting team.</p>
+  skills:
+    - ember-cli
+    - electron
+
 - date: August 2015
   type: work
   title: Back to programming full time.
@@ -156,6 +165,12 @@
     </a>
 
 - date: June 2005
+  type: work
+  title: First job as a developer. <a href="http://www.patho.es/">Path0 Informática</a>
+  body: >
+    <p>This was my very first job.
+
+- date: June 2005
   type: education
   title: Finished CFGS Administración de Sistemas Informáticos
 
@@ -177,7 +192,6 @@
     <p>Internet started to seriously have presence in Spain, and the IRC
     networks were used by many. I learned to program doing a script for
     mIRC. Sadly that code is lost forever.</p>
-    <img class="timeline-thumb" src="/images/mirc.gif" />
 
 - date: Sept. 1989
   type: skill
