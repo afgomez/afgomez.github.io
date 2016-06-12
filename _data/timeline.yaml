@@ -65,6 +65,7 @@
     - jQuery
     - HTML::Template
     - API Design
+    - A/B testing
 
 - date: Jan. 2014
   type: life
